@@ -26,10 +26,8 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
-
-
 function scrollActive(){
-    const scrollY = window.pageXOffset
+    const scrollY = window.pageYOffset
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight
@@ -43,7 +41,6 @@ function scrollActive(){
         }
     })
 }
-
 window.addEventListener('scroll', scrollActive)
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
